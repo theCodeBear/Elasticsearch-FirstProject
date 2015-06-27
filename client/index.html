@@ -6,20 +6,23 @@
   <link rel='stylesheet' href='bower_components/bootstrap/dist/css/bootstrap.min.css'>
   <script src='bower_components/angular/angular.min.js'></script>
 </head>
-<body ng-app='myApp'>
+<body ng-app='elastic'>
 
   <div ui-view></div>
 
   <!-- Libraries -->
   <script src='bower_components/angular-ui-router/release/angular-ui-router.min.js'></script>
+  <script src='bower_components/moment/min/moment.min.js'></script>
 
   <!-- Angular ui-router files -->
   <script src='index.js'></script>
   <script src='app/landing/landing.js'></script>
   <script src='app/users/users.js'></script>
+  <script src='app/elasticsearch/elastic.js'></script>
 
   <!-- Controllers -->
   <script src='app/users/users.controller.js'></script>
+  <script src='app/elasticsearch/elastic.controller.js'></script>
 
   <!-- Services -->
   <script src='components/services/users.services.js'></script>

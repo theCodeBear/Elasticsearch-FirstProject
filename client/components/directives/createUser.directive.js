@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp')
+angular.module('elastic')
 
 .directive('createUser', function(User) {
 

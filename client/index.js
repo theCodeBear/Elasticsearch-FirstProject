@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp', ['ui.router'])
+angular.module('elastic', ['ui.router'])
 
 .config(function($stateProvider, $urlRouterProvider) {
 

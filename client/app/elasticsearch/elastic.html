@@ -1,0 +1,13 @@
+<h2> Saved an animal to the Elasticsearch DB </h2>
+<form name='animalSaveForm'>
+  <input type='input' ng-model='animal.name'>
+  <select name='AnimaliaClass' ng-model='animal.class'>
+    <option value='mammal'>Mammal</option>
+    <option value='reptile'>Reptile</option>
+    <option value='bird'>Bird</option>
+    <option value='insect'>Insect</option>
+    <option value='dinosaur'>Dinosaur</option>
+    <option value='fish'>Fish</option>
+  </select>
+  <button type='submit' ng-click='saveAnimal(animal)'>Save Animal</button>
+</form>
