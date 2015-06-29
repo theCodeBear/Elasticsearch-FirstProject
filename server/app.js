@@ -14,6 +14,8 @@ var client = new elasticsearch.Client({
   host: connectionString,
   log: 'trace'
 });
+
+module.exports.client = client;
 // send a HEAD request to /?hello=elasticsearch
 client.ping({
   requestTimeout: 30000,
@@ -63,6 +65,7 @@ client.search({
 
 
 
+
 // running some basic Express middleware
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -89,4 +92,11 @@ var server = app.listen(3000, function() {
   console.log('Serving on port %s', port);
 });
 
-module.exports = app;
+module.exports.app = app;
+
+// module.exports.app = app;
+// module.exports.client = client;
+// module.exports = {
+//   app: app,
+//   client: client
+// };
